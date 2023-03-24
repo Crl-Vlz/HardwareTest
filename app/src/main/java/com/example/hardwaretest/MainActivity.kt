@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
 
         //Initializes the location manager
         lm = getSystemService(Context.LOCATION_SERVICE) as LocationManager
-        ll = LocationListener { p0 -> txtLocation.text = "Latitude: ${String.format("%.4f", p0.latitude)}Longitude: ${String.format("%.2f", p0.longitude)}" }
+        ll = LocationListener { p0 -> txtLocation.text = "Latitude: ${String.format("%.4f", p0.latitude)}\nLongitude: ${String.format("%.2f", p0.longitude)}" }
 
 
         btnLocation.setOnClickListener{
